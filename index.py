@@ -32,6 +32,7 @@ def server_font(filename):
     """ setting for font file """
     return static_file(filename, root=BASE_DIR+"/static/fonts") 
 
+@route('/top')
 @route('/top/')
 @route('/top/<username>')
 def top(username="anonymous"):
